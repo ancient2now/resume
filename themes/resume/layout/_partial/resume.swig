@@ -44,6 +44,7 @@
     </div>
   </section>
 
+{% if config.resume.skills %}
   <section id="skills">
     <div class="section-title">
       Skills
@@ -61,6 +62,7 @@
       {% endfor %}
     </div>
   </section>
+{% endif %}
 
   <section id="experience">
     <div class="section-title">
@@ -98,6 +100,14 @@
         </div>
         <div class="block-content">
           {{ project.description }}
+        </div>
+        <div class="block-content">
+          {% for content in project.contents %}
+          {{ content }}<br />
+          {% endfor %}
+        </div>
+        <div class="block-content">
+          {{ project.skills }}
         </div>
       </div>
       {% endfor %}

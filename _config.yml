@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Resume
+title: 李俊秋的简历
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: Li Junqiu
 language: en
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://resume.aki.ink
 root: /
 permalink: 
 permalink_defaults:
@@ -116,7 +116,7 @@ resume:
   jobtitle: Java工程师
   contact:
     - icon: fa-envelope
-      text: akikun829@162.com
+      text: akikun829@163.com
     - icon: fa-phone-square
       text: +86-18351937779
     - icon: fa-globe
@@ -129,7 +129,7 @@ resume:
     - university: 南京工程学院 -- 软件工程
       duration: Sep 2013 - July 2017
       location: 江苏 - 南京
-      major: 软件工程
+      major: 操作系统, 数据结构, 算法, C基础, C++, Java, 编译原理, Linux系统, 数据库设计, 计算机网络, 软件工程
   # skills:
   #   - title: 编程语言以及框架
   #     items: Java, Python, Spring相关, Akka
@@ -142,18 +142,41 @@ resume:
       description: 
   projects:
     - name: HW公有云开发
-      duration: Sep 2018 - Now
-      description: description
+      duration: 2018年4月 - 2019年11月
+      description: HW公有云网络部分的接口开发
       contents: 
-        - 1. 基于Java，进行OpenStack Neutron组件重构,
+        - 1. 基于Java，进行OpenStack Neutron组件重构，原生Python实现
         - 2. 独立开发接口模块，完成文档，优化组件，SQL设计
-      
-      skills: Java, python, OpenStack Neutron, Hello
-      
+      skills: 使用技术：[ Java8, python, OpenStack Neutron, akka, 优化 ]
       # contribution: Contributor.
+
     - name: Luses(Linuex update support expert system)
-      description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      contribution: Creator and maintainer.
+      duration: 2018年1月 - 2018年4月 
+      description: 爬取多个Linux论坛数据,通过自然语言处理后，得出问题与最佳解决方案对应关系，最终能够更具Linux的bug描述，自动寻找到相应的解决方法，我主要负责数据爬取解析存储，并提供整个系统中交互所需要的接口
+      contents:
+        - 
+        - 1. 基于scrapy-redis的爬虫系统，爬取Linux相关的网站数据
+        - 2. 提供接口将数据存储mongodb，查询展示
+      skills: 使用技术：[ Spring Cloud, scrapy-redis, kafka, mongodb ] 
+
+    - name: 我的南京APP
+      duration: 2017年5月 - 2018年1月 
+      description: 
+      contents: 
+        - 【公交出行】处理公交到站时间和预计等待时间，以及南京所有公交线路信息，同时提供给用户到目标点的路径规划功能
+        - 1. 从百度，高德爬取线路数据，整理成自己的数据格式存储
+        - 2. 修改并且优化公交出行中路径规划算法，修改公交出行GPS不准确的问题
+        - 使用技术：[ Scala, AStar算法 ]
+        - 
+        - 【绿色积分】【停车场】python脚本以及提供数据接口
+        - 1. 使用python脚本，从FTP获取公交刷卡记录，脚本处理数据后存入redis，处理成定时脚本
+        - 2. 获取多个数据来源的停车场，算法去重之后，提供给用户位置周围的停车场
+        - 
+        - 【大数据监控管理平台】大数据展示我的南京使用状况,南京用户政务相关的信息统计展示
+        - 1. 根据访问日志，统计我的南京API网关访问次数，提供查询接口，数据化展示
+        - 2. 统计支付平台交易次数与交易金额，提供查询接口
+        - 使用技术：[ ELK, Jenkins, hadoop ]
+        
   languages:
     - name: English
       proficiency: TOEIC 660

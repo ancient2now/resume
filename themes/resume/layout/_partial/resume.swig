@@ -77,9 +77,11 @@
         <div class="block-subtitle">
           {{ exp.duration }} | {{ exp.company }}
         </div>
+        {% if exp.description %}
         <div class="block-content">
           {{ exp.description }}
         </div>
+        {% endif %}
       </div>
       {% endfor %}
     </div>
@@ -96,7 +98,7 @@
           {{ project.name }}
         </div>
         <div class="block-subtitle">
-          {{ project.contribution }}
+          {{ project.duration }}
         </div>
         <div class="block-content">
           {{ project.description }}

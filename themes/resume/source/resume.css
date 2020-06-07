@@ -151,3 +151,8 @@ footer {
   line-height: 3rem;
   margin-top: 1rem;
   margin-bottom: 1rem; }
+
+footer #download{
+  color: red;
+}
+

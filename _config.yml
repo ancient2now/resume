@@ -156,7 +156,7 @@ resume:
       contents: 
         - 1. 基于Java8，进行OpenStack Neutron组件重构，原生是Python实现
         - 2. 独立开发接口模块，完成文档，优化组件，SQL设计
-      skills: 使用技术：[ Java8，Python，OpenStack Neutron，akka，SQL优化 ]
+      skills: 使用技术：[ Java8，Python，akka，SQL优化 ]
 
     - name: Luses(Linux update support expert system)
       duration: 2018年1月 - 2018年4月 

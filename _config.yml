@@ -13,8 +13,8 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://resume.aki.ink
-root: /
+url: https://ancient2now.github.io/resume
+root: /resume/
 permalink: 
 permalink_defaults:
 pretty_urls:

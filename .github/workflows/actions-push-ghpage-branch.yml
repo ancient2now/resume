@@ -10,6 +10,7 @@ jobs:
   hexo-deployment:
 
     runs-on: ubuntu-latest
+    environment: github-pages
     env:
       TZ: Asia/Shanghai
 
@@ -43,8 +44,9 @@ jobs:
         REPO: github.com/ancient2now/resume
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
-        cd ./public && git init && git add .
+        cd ./public && git init && git add . 
         git config --global user.name $GIT_NAME
         git config --global user.email $GIT_EMAIL
         git commit -m "Site deployed by GitHub Actions"
+        git checkout -b gh-pages
         git push --force --quiet "https://$GH_TOKEN@$REPO" gh-pages:gh-pages
